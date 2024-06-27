@@ -1,0 +1,20 @@
+﻿@model MvcCv.Models.Entity.TblCertificates
+@{
+    ViewBag.Title = "AddCertificate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h3>Yeni Sertifika Ekle</h3>
+<br />
+<form method="post" class="form-group">
+
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+   
+    @Html.Label("Açıklama")
+    @Html.TextBoxFor(x => x.Descrption, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>
+

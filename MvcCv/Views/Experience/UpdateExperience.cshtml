@@ -1,0 +1,39 @@
+﻿@model MvcCv.Models.Entity.TblExperiences
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h3>Deneyim Güncelleme Sayfası</h3>
+<br />
+<form method="post" class="form-group">
+    @*<input type="hidden" name="ID" class="form-control" value="@Model.ID"  />
+    <label>Başlık</label>
+    <input type="text" name="Title" class="form-control" value="@Model.Title"  />
+    <br />
+    <label>Alt Başlık</label>
+    <input type="text" name="SubTitle" class="form-control" value="@Model.SubTitle" />
+    <br />
+    <label>Açıklama</label>
+<textarea name="Description" class="form-control"  rows="5">@Model.Description </textarea>
+    <br />
+    <label>Tarih</label>
+    <input type="text" name="Date" class="form-control" value="@Model.Date" />
+    <br />*@
+
+    @Html.HiddenFor(x=>x.ID)
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x=>x.Title, new {@class="form-control"})
+    <br />
+    @Html.Label("Alt Başlık")
+    @Html.TextBoxFor(x=>x.SubTitle, new {@class = "form-control"})
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x=>x.Description, new {@class = "form-control"})
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x=>x.Date, new {@class = "form-control"})
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+
+</form>

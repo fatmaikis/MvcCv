@@ -1,0 +1,29 @@
+﻿@model MvcCv.Models.Entity.TblEducations
+@{
+    ViewBag.Title = "AddEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Yeni Eğitim Ekle</h3>
+<form method="post" class="form-group">
+
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Title, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Alt Başlık")
+    @Html.TextBoxFor(x => x.SubTitle, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Alt Başlık2")
+    @Html.TextBoxFor(x => x.SubTitle2, new { @class = "form-control" })
+    <br />
+    @Html.Label("Genel Not Ortalaması (GNO)")
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.GNO, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>

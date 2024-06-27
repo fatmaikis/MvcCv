@@ -1,0 +1,24 @@
+﻿@model MvcCv.Models.Entity.TblSkills
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h3>Yetenek Güncelleme Sayfası</h3>
+<br />
+
+<form method="post" class="form-group">
+
+    @Html.HiddenFor(x => x.ID)
+    @Html.Label("Yetenek")
+    @Html.TextBoxFor(x => x.Skill, new { @class = "form-control" })
+    <br />
+    @Html.Label("Oran")
+    @Html.TextBoxFor(x => x.Rate, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-info">Güncelle</button>
+
+
+
+</form>

@@ -1,0 +1,18 @@
+﻿@model MvcCv.Models.Entity.TblAdmin
+@{
+    ViewBag.Title = "UpdateAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kullanıcı Güncelleme Sayfası</h2>
+<br />
+
+@Html.HiddenFor(x => x.ID)
+@Html.Label("Kullanıcı Adı")
+@Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+<br />
+@Html.Label("Şifre")
+@Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+
+<br />
+<button class="btn btn-primary">Güncelle</button>
