@@ -16,7 +16,8 @@ sağlanmamaktadır.
 
 ## Ekran Görüntüleri
 * İlk olarak hakkımda sayfası yer almaktadır. Buradan hakkımda ki bilgilere ve sosyal medya hesaplarıma erişim sağlayabilmektedir. 
-![1](https://github.com/fatmaikis/MvcCv/assets/77547782/000fe030-f053-496b-9379-cee84a8f2e50)
+![1 5](https://github.com/fatmaikis/MvcCv/assets/77547782/4bdd57cc-c434-453c-81e0-f1a20a3d522f)
+
 
 * Deneyimlerim sayfasını görüntüleyebilmektedir. 
   ![2](https://github.com/fatmaikis/MvcCv/assets/77547782/261b9b8d-a5c7-40e3-8f21-a58bf9988c80)
